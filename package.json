@@ -1,0 +1,30 @@
+{
+  "name": "cookbook",
+  "version": "1.0.0",
+  "description": "NodeJS simple cookbook CRUD",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^4.2.1",
+    "mongoose": "^6.0.14",
+    "mongoose-aggregate-paginate-v2": "^1.0.5"
+  },
+  "devDependencies": {
+    "grunt-apidoc": "^0.11.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fzunic7/cookbook.git"
+  },
+  "author": "Frane Zunic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fzunic7/cookbook/issues"
+  },
+  "homepage": "https://github.com/fzunic7/cookbook"
+}
