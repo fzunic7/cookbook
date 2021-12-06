@@ -10,3 +10,4 @@ Make sure you have installed all of the following prerequisites on your developm
 - Clone this repository in your desired folder
 - Open folder in terminal and run: `npm install`
 - Run `npm start`
+- To run tests run `npm test`
