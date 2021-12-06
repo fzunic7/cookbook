@@ -58,7 +58,7 @@ describe('Get Endpoints', () => {
 
     it('should retrieve an empty filtered list of recipe', async () => {
         const res = await request(app)
-        .get(recipeRoute + '?name=dsasdadasdsadasdasdasdas');
+            .get(recipeRoute + '?name=dsasdadasdsadasdasdasdas');
 
         expect(res.statusCode).toEqual(200);
         expect(res.body.success.totalRecipes).toEqual(0);
@@ -68,10 +68,10 @@ describe('Get Endpoints', () => {
 describe('Delete Endpoints', () => {
     it('should delete recipe', async () => {
         const res = await request(app)
-        .delete(recipeRoute + '/delete/' + recipeId);
+            .delete(recipeRoute + '/delete/' + recipeId);
+
         expect(res.statusCode).toEqual(200);
         expect(res.body).toHaveProperty('success');
         expect(res.body.success).toEqual('Recipe has been deleted');
     });
-
 })
