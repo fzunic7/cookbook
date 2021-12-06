@@ -9,4 +9,4 @@ Make sure you have installed all of the following prerequisites on your developm
 # Usage
 - Clone this repository in your desired folder
 - Open folder in terminal and run: `npm install`
-- Run `npm start
+- Run `npm start`
