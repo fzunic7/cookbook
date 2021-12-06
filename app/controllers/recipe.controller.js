@@ -309,7 +309,7 @@ exports.updateRecipe = (req, res) => {
 
 
 /**
- * @api {delete} /recipe/delete/:id Retrieve a single recipe by id
+ * @api {delete} /recipe/delete/:id Delete recipe
  * @apiName deleteRecipe
  * @apiGroup Recipe
  * 

@@ -3,6 +3,8 @@ const app = require('../../server')
 
 const recipeRoute = "/api/recipe/";
 
+let recipeId;
+
 describe('Post Endpoints', () => {
     it('should create a new recipe', async () => {
         const res = await request(app)
@@ -22,6 +24,8 @@ describe('Post Endpoints', () => {
         expect(res.body.success).toHaveProperty('name');
         expect(res.body.success).toHaveProperty('description');
         expect(res.body.success).toHaveProperty('ingredients');
+
+        recipeId = res.body.success._id;
     });
 
     it('should fail to create a new recipe without name', async () => {
@@ -60,3 +64,14 @@ describe('Get Endpoints', () => {
         expect(res.body.success.totalRecipes).toEqual(0);
     })
 });
+
+describe('Delete Endpoints', () => {
+    it('should delete recipe', async () => {
+        const res = await request(app)
+        .delete(recipeRoute + '/delete/' + recipeId);
+        expect(res.statusCode).toEqual(200);
+        expect(res.body).toHaveProperty('success');
+        expect(res.body.success).toEqual('Recipe has been deleted');
+    });
+
+})
