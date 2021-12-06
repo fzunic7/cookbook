@@ -249,7 +249,7 @@ exports.getSingleRecipe = (req, res) => {
 };
 
 /**
- * @api {post} /recipe/update/:id Update a Recipe by the id in the request
+ * @api {put} /recipe/update/:id Update a Recipe by the id in the request
  * @apiName updateRecipe
  * @apiGroup Recipe
  * 
@@ -309,7 +309,7 @@ exports.updateRecipe = (req, res) => {
 
 
 /**
- * @api {get} /recipe/delete/:id Retrieve a single recipe by id
+ * @api {delete} /recipe/delete/:id Retrieve a single recipe by id
  * @apiName deleteRecipe
  * @apiGroup Recipe
  * 
